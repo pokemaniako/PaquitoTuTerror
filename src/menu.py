@@ -20,7 +20,7 @@ def menu_de_inicio():
             if jugador:
                 menu_jugador(jugador)
         elif rpta == "3":
-            print("\t Vuelve cuando tengas plata bab:bear:son")
+            print("\t Vuelve cuando tengas plata bab🐻son")
             break
         else:
             print("\t Ingresa bien tu rpta hermanito lindo :v ")
