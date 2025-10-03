@@ -33,6 +33,7 @@ def iniciar_sesion():
     jugador = data.find_player_by_credentials(usuario, contraseña)
     if jugador:
         print(f"\t Bienvenido de nuevo, {jugador['nombre']}!")
-        return jugador
+        if jugador != 0:
+            return jugador
     print("\t Usuario o contraseña incorrecto")
-    return None
+    return 0

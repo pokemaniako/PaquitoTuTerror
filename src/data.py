@@ -7,9 +7,9 @@ def add_jugador(jugador):
 
 def find_player_by_credentials(usuario, contraseña):
     for j in jugadores:
-        if j.get("usuario") == usuario and j.get("contraseña") == contraseña:
+        if j["usuario"] == usuario and j["contraseña"] == contraseña:
             return j
-    return None
+    return 0
 
 def add_apuesta(apuesta):
     apuestas.append(apuesta)
