@@ -171,14 +171,13 @@ def Ruletita(jugador):
     resultado = choice(range(1, 37))
     if eleccion == resultado:
         jugador["saldo"] += monto  # Modificar el saldo del jugador dependiendo del diccionario de abajito : AUMENTAR
-        print(f"\t Ganaste el resultado fue {resultado}. \n\t Nuevo saldo: {jugador['saldo']:.2f}")
+        print(f"\t Ganaste! El resultado fue {resultado}. \n\t Nuevo saldo: {jugador['saldo']:.2f}")
     else:
         jugador["saldo"] -= monto  # Modificar el saldo del jugador dependiendo del diccionario de abajito : DESCONTAR
-        print(f"\t Perdiste el resultado fue {resultado}. \n\t Nuevo saldo: {jugador['saldo']:.2f}")
-
-
+        print(f"\t Perdiste! El resultado fue {resultado}. \n\t Nuevo saldo: {jugador['saldo']:.2f}")
+    
     apuesta = {
-        "jugador": jugador["usuario"], 
+        "jugador": jugador["usuario"],  # Diccionario de la apuesta y de los jugadores
         "monto": monto,
         "eleccion": eleccion,
         "resultado": resultado,
